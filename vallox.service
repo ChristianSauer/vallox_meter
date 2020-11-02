@@ -1,0 +1,14 @@
+[Unit]
+Description=Vallox Meter
+After=network.target
+
+[Service]
+ExecStart=python app.py
+WorkingDirectory=/opt/app
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

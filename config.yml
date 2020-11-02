@@ -1,0 +1,35 @@
+timeout: 60
+vallox_ip: 192.168.178.56
+
+ravendb_pem_file: raven_cert/PEM/free.chsauer.client.certificate.pem
+ravendb_url: https://a.free.chsauer.ravendb.cloud
+ravendb_db: readings
+
+metrics:
+  - setting: A_CYC_TEMP_EXHAUST_AIR
+    explanation: Exhausted air temp
+    range: Number (°C)
+
+  - setting: A_CYC_TEMP_EXTRACT_AIR
+    explanation: Extracted air temp
+    range: Number (°C)
+
+  - setting: A_CYC_TEMP_OUTDOOR_AIR
+    explanation: Outside air temp
+    range: Number (°C)
+
+  - setting: A_CYC_TEMP_SUPPLY_AIR
+    explanation: Incoming air temp
+    range: Number (°C)
+
+  - setting: A_CYC_TEMP_SUPPLY_CELL_AIR
+    explanation: Incoming air temp (pre heating)
+    range: Number (°C)
+
+  - setting: A_CYC_RH_VALUE
+    explanation: Extracted air humidity
+    range: 0 - 100 (%)
+
+  - setting: A_CYC_FAN_SPEED
+    explanation: Fan speed
+    range: 0 - 100 (%)
