@@ -3,8 +3,8 @@ Description=Vallox Meter
 After=network.target
 
 [Service]
-ExecStart=python app.py
-WorkingDirectory=/opt/app
+ExecStart= /opt/dev/vallox_meter/.venv/bin/python app.py
+WorkingDirectory=/opt/dev/vallox_meter
 StandardOutput=inherit
 StandardError=inherit
 Restart=always

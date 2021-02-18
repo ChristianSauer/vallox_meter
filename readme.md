@@ -48,7 +48,7 @@ For RavenDb:
 
 1. setup service
 ```shell script
-sudo cp valloxmeter.service /etc/systemd/system/valloxmeter.service
+sudo cp vallox.service /etc/systemd/system/vallox.service
 sudo systemctl start vallox.service
 sudo systemctl enable vallox.service
 ```
